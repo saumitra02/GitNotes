@@ -1,0 +1,145 @@
+.gitignore
+
+git config --global user.name "Saumitra"
+
+git config --global user.email "saxena.saumitra@gmail.com"
+
+git config --list
+
+git config user.name
+
+
+git status
+git init
+git add --a //all changes will be staged
+git commit -m "My commit" //will be moved to git repo
+git log // history of comments
+
+chapter 5. Cloning a GIT Repository by GitHub
+
+8. Showing changes between Commits/Staging Area and Working Directory
+
+git diff // compares staging area with  working directory .
+
+git diff --staged //compares previous commit with current staging area
+
+
+9. To Skipp Staging Area
+
+git commit -a -m "Direct Commit" // Will commit all the tracked files(not untracked files) without putting it to Statging area.
+
+10.Moving and Renaming Files in GIT
+
+git rm third.txt //removes the file and then also staged the file
+
+git mv first.txt second.txt
+
+To un-track the file and not delete
+git rm --cached db.accdb
+
+*************11. GitLog : Viewing and changing Commits in GIT ****************
+
+git clone https://github.com/pandas-dev/pandas.git mypanda
+git log
+
+git log -p // what changes have been done in the commit============IMP===========
+git log -p -3  // previous 3 commits along with diffrence
+
+git log --stat //author,date,filename,commitnames
+
+git log --pretty=oneline  //Hash and Comment
+git log --pretty=short  // Commit ,author,message
+git log --pretty=long //
+git log --since=2.days
+git log --since=2.weeks
+git log --pretty=format:"%h --%an"
+
+==> To change commitnames
+mix commit in already committed message
+git commit --ammend
+
+***************12. UnStaging and UnModifying Files in GIT *********************
+
+To Unstage a File
+git restore --staged first_renamed.txt // no change in contents, its just unstaging
+
+To get back to previously committed file
+git checkout -- first_rename.txt
+
+git checkout -f // all modified files replaced with committed version
+
+
+***********  13. GitHub: Working with Remote Repositories **********
+git remote -v
+
+git remote add origin git@github.com:CodeWithHarry/GitTutorialDemo.git
+
+git push -u origin master
+
+
+
+*********14. Setting Alias in Git **************
+git config --global alias.st status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
