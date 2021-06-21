@@ -161,10 +161,10 @@ git merge tryCleanup
 
 git add index.html // to resolve merge conflict also
 
-git branch -v // beanches with last commit details like last commit message
+git branch -v // displays all the Branches with last commit details like last commit message
 
-git branch --merged //already merged branched
-git branch --no -merged //not already merged branches
+git branch --merged //displays already merged branched
+git branch --no -merged //dispalys not already merged branches
 
 to delete a branch
 git branch -d develop  (if not merged , then it will not be deleted, you will get error)
@@ -181,9 +181,9 @@ two type - 1.) Long Running Branches and  2.) Topic Branches
 
 git push -u origin master
 
-git checkout bugfix
+git checkout bugfix // switch to a already existing new branch named-"bugfix"
 
-git push origin bugfix
+git push origin bugfix // push branch named- "bugfix" in GIT Remote Repository.
 or
 git push origin bugfix:mybugfix
 
