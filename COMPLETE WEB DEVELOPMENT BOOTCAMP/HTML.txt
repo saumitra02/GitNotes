@@ -1,0 +1,19 @@
+********Chapter #1 : Introduction to HTML/CSS ********* 
+
+HTML=Must
+CSS=Beauty
+JavaScript=Brain
+
+
+HTML = HyperText Markup Language.Standardized sytem for web browser.
+
+CSS=Cascading Style Sheets handles presentation of the web page of HTML.
+
+JavaScript= JS,HL Interpreted Programming Language.Allows client-side scripting to create completely dynamic web applications and websites.
+
+**********Chapter#2 ***********
+
+Installed VS code and Live Server in it.
+
+
+
