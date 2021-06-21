@@ -72,14 +72,150 @@ git checkout -f // all modified files replaced with committed version
 ***********  13. GitHub: Working with Remote Repositories **********
 git remote -v
 
-git remote add origin git@github.com:CodeWithHarry/GitTutorialDemo.git
+git remote add origin git@github.com:saumitra02/GitNotes.git
 
-git push -u origin master
+Lenovo@LAPTOP-C7IHCBAH MINGW64 /f/Learning/GIT/GitTutorials (master)
+$ ssh-keygen -t ed25519 -C "saxena.saumitra@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Lenovo/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Lenovo/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Lenovo/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:IqJwfNaGz765VIT770N1F/kf6vJfGqPqwAH3u/hcHX4 saxena.saumitra@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                .|
+|       .       o |
+|      o o       o|
+| .   o = .  . ..o|
+|. + = = S .. .o.o|
+|.o + = = ... + ..|
+|.     + +.. o = E|
+|     o . =.+ o =.|
+|      =o.+Oo+.o. |
++----[SHA256]-----+
 
+Lenovo@LAPTOP-C7IHCBAH MINGW64 /f/Learning/GIT/GitTutorials (master)
+
+Lenovo@LAPTOP-C7IHCBAH MINGW64 /f/Learning/GIT/GitTutorials (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 2453
+
+Lenovo@LAPTOP-C7IHCBAH MINGW64 /f/Learning/GIT/GitTutorials (master)
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/Lenovo/.ssh/id_ed25519 (saxena.saumitra@gmail.com)
+
+Lenovo@LAPTOP-C7IHCBAH MINGW64 /f/Learning/GIT/GitTutorials (master)
+$
+
+
+Lenovo@LAPTOP-C7IHCBAH MINGW64 /f/Learning/GIT/GitTutorials (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.15 KiB | 147.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:saumitra02/GitNotes.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 
 *********14. Setting Alias in Git **************
 git config --global alias.st status
+
+**************15. Creating and switching Branches in GIT ******************
+
+git restore this.txt // the file -"this.txt" which is not staged till now , but is modified  .So after this command all the contents will be replaced by Committed version .
+
+To create new branch
+
+git checkout -b develop
+
+git checkout master
+
+To Commit directly without staging( skipping hte staging Area)
+git commit -a -m "changed"
+
+Note : Files which are in .gitignore are ignored during branch switch also.
+
+******************* 16. Branching and Merging in a Production Grade Project ***************************
+
+Go to another git branch
+git checkout branchName
+
+to Merge the COde
+Suppose we are in master Branch
+git merge tryCleanup
+
+
+*************  17. Resolving Merge Conflicts ****************
+
+git add index.html // to resolve merge conflict also
+
+git branch -v // beanches with last commit details like last commit message
+
+git branch --merged //already merged branched
+git branch --no -merged //not already merged branches
+
+to delete a branch
+git branch -d develop  (if not merged , then it will not be deleted, you will get error)
+
+git branch -D develop (will delete branch even if branch is not merged )
+
+git commit -a -m "This is C4"  // To commit directly to local git without putting your code into staging.
+
+***** 18. GIT BRANCHING WorkFlow in Production *****
+
+two type - 1.) Long Running Branches and  2.) Topic Branches
+
+************** 19. Pushing GIT Branches to Remote Repositories *******************
+
+git push -u origin master
+
+git checkout bugfix
+
+git push origin bugfix
+or
+git push origin bugfix:mybugfix
+
+To delete the Remote Branch
+git push -d origin bugfix
+
+git remote -v 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
