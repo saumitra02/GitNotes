@@ -17,3 +17,24 @@ Installed VS code and Live Server in it.
 
 
 
+******* Chater#3  : Basic Structure of a Website ******
+Theory .
+to comment a line press ctrl+/
+comment manually - <!--   -->
+
+***** Chapter#4 : Title,Script,Links and Meta Tag********
+
+meta : helps page to be easily identified by search engine like google.its called seo= search engine optimization.
+
+
+*** Chapter#5 : HTML Tutorial : Headings & Paragraphs ******
+ctrl+enter to go to new line
+
+
+***** Chapter#6 : Img and Anchor Tags **********
+
+width , height to be set by css only not html. css is for design, html is for skelton.
+
+
+
+
